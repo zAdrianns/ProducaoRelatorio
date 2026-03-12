@@ -28,7 +28,7 @@ export default function HomePage() {
     const [data, setData] = useState("");
     const [periodo, setPeriodo] = useState<number | "">("");
     const [quantities, setQuantities] = useState<Record<number, string>>({});
-    const [isGenerating, setIsGenerating] = useState(false);
+    const [isGenerating] = useState(false);
     const [isSending, setIsSending] = useState(false);
 
     const today = new Date().toLocaleDateString("pt-BR");
@@ -248,7 +248,6 @@ export default function HomePage() {
                     <button
                         onClick={handleSendEmail}
                         disabled={isSending || !supervisor || !email}
-                        variant="outline"
                         className="w-full h-12 text-base font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-white"
                     >
                         {isSending ? (
