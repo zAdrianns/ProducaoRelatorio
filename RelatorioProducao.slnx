@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="relatorioproducao.client/relatorioproducao.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="RelatorioProducao.Server/RelatorioProducao.Server.csproj" />
+</Solution>
